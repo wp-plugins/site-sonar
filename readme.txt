@@ -41,7 +41,6 @@ You need Install SQLITE or PDO_SQLITE module on your server.
 Use your favorite SSH or FTP client and set this directory writable for all users.
 
 
-
 == Screenshots ==
 
 1. Plugin Settings
