@@ -1,0 +1,3 @@
+<Files logs.sqlite>
+Deny from all
+</Files>
