@@ -27,17 +27,16 @@ Related Links:
 
 == Frequently Asked Questions ==
 
-= What are requirements ?
+= What are requirements ? =
 
 Plugin: require SQLITE or PDO_SQLITE modules.
 Windows Client: require Windows + Framework.NET 3.5
 
 = ERROR: You have not met a requirement of this plugin. SQLITE or PDO_SQLITE PHP module is required =
-You need
 
-Install SQLITE or PDO_SQLITE module on your server.
+You need Install SQLITE or PDO_SQLITE module on your server.
 
-= ERROR: Directory \xxx\xxx\xxx is not writable.
+= ERROR: Directory \xxx\xxx\xxx is not writable. =
 
 Use your favorite SSH or FTP client and set this directory writable for all users.
 
