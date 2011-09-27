@@ -102,7 +102,6 @@ if(!function_exists('sqlite_open'))
 	function sqlite_fetch_single($statement)
 	{
 		$res = $statement->fetchColumn();
-		$statement->closeCursor();
 		
 		return $res;
 	}
@@ -235,7 +234,6 @@ if($action == '' || $action == 'update')
 				{
 					$res = sqlite_query($dbpointer, "SELECT uid FROM user WHERE user_agent = '$user_agent'", SQLITE_NUM, $error);
 					$uid = ''.sqlite_fetch_single($res);
-					$res->closeCursor();
 					unset($res);
 					break;
 				}
@@ -259,7 +257,6 @@ if($action == '' || $action == 'update')
 			}
 			
 			$uid = ''.sqlite_fetch_single($res);
-			$res->closeCursor();
 			unset($res);
 		}
 		
@@ -303,7 +300,6 @@ if($action == '' || $action == 'update')
 			$error = '';
 			$res = sqlite_query($dbpointer, "SELECT id FROM user WHERE uid = '$uid'", SQLITE_NUM, $error);
 			$fkuser = ''.sqlite_fetch_single($res);
-			$res->closeCursor();
 			unset($res);
 			
 			if($error != '')
@@ -354,7 +350,6 @@ if($action == '' || $action == 'update')
 				
 				$res = sqlite_query($dbpointer, "SELECT last_insert_rowid()");
 				$fkuser = ''.sqlite_fetch_single($res);
-				$res->closeCursor();
 				unset($res);
 			}
 			else
@@ -385,7 +380,6 @@ if($action == '' || $action == 'update')
 			
 			$res = sqlite_query($dbpointer, "SELECT MAX(id) FROM pageview WHERE fkuser = $fkuser");
 			$fkbefore = ''.sqlite_fetch_single($res);
-			$res->closeCursor();
 			unset($res);
 					
 			if($fkbefore == '') $fkbefore = 'NULL';
@@ -578,7 +572,6 @@ if($action == 'download')
 		xmlwriter_end_element($xr);
 	}
 	xmlwriter_end_element($xr);
-	$res->closeCursor();
 	unset($res);
 	
 	//pageviews
@@ -611,7 +604,6 @@ if($action == 'download')
 		xmlwriter_end_element($xr);
 	}
 	xmlwriter_end_element($xr);
-	$res->closeCursor();
 	unset($res);
 	//
 	

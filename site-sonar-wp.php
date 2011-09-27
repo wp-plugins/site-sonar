@@ -3,7 +3,7 @@
 Plugin Name: Site-Sonar
 Plugin URI: http://site-sonar.com
 Description: Real-Time Web Site Monitoring.
-Version: 0.1
+Version: 0.2
 Author: Technalab
 Author URI: http://technalab.com
 License: GPL2

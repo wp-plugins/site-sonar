@@ -3,7 +3,7 @@ Contributors: Technalab
 Tags: monitoring, monitor, web site monitoring, monitoring tool, tracker, tracking, analytics, realtime, statistics, site, notification, sniffer, antyhack, google, google analytics, seo, site-sonar, site sonar, sonar, radar, jumpple, worldlogger, woopra, chartbeat, mint, clicky, reinvigorate, piwik, technalab
 Requires at least: 2.9
 Tested up to: 3.2.1
-Stable tag: 0.1
+Stable tag: 0.2
 
 Real-Time Web Site Monitoring
 
@@ -58,4 +58,12 @@ Windows Client is also free of charge since is in ALFA or BETA state. After fina
 == Changelog ==
 
 
-0.1 - First, tested and stable version
+0.1
+
+First version
+
+0.2
+
+Fixed:
+
+Fatal error: Call to a member function closeCursor() on a non-object in .../wp-content/plugins/site-sonar/site-sonar.php on line 262
