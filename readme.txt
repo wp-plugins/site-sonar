@@ -12,6 +12,8 @@ Real-Time Web Site Monitoring
 Plugin allows monitoring and sniffing users in real-time.
 It is not alternative to Google Analytics but it can fill the gap of informations.
 
+[vimeo http://www.youtube.com/watch?v=S9G3sN0TXp0]
+
 Related Links:
 
 * <a href="http://site-sonar.com" title="Plugin Homepage Site Sonar">Plugin Homepage</a>
