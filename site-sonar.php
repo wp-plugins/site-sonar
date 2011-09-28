@@ -419,12 +419,14 @@ if($action == '' || $action == 'update')
 			}
 		}
 		
-		?><script type="text/javascript" >
+		if($action != 'update')
+		{
+?><script type="text/javascript" >
     document.cookie = "SS_uid=<?= $uid ?>;expires=<?= gmdate("D, d M Y H:i:s", time() + 3600 * 24 * 1095)." GMT" ?>";<?
 		//Use javascript to fill rest of values.
 		if($language == '' && $resolution == '' && $colors == '' && $plugins == '' && $action != 'update')
 		{
-			?>
+?>
 function ssSetCookie(name, value) 
 {
 	if(navigator.cookieEnabled)
@@ -482,6 +484,7 @@ self.setInterval("ssPing()", 60000);
 		?>
 		</script>
 		<?
+		}
 	}
 }
 
