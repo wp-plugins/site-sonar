@@ -118,7 +118,7 @@ else
         <span class="description">Password which you need to login from Windows Client.</span></td>
         <td rowspan="2" align="center" valign="top" nowrap><img src="http://site-sonar.com/wp-content/uploads/splash.png" /><br>
           <a class="row-title" style="color:#063" href="http://site-sonar.com/?page_id=1784" target="_blank">Download latest version</a><br /><br />
-          <iframe width="250" height="199" src="http://www.youtube.com/embed/S9G3sN0TXp0?rel=0" frameborder="0" allowfullscreen></iframe></td>
+          <iframe width="250" height="199" src="http://www.youtube.com/embed/yCgEfic32x4?rel=0" frameborder="0" allowfullscreen></iframe></td>
       </tr>
       <tr>
         <td valign="top" nowrap>Session Data</td>
